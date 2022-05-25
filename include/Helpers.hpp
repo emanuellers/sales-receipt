@@ -1,7 +1,7 @@
 #include <string>
 
 namespace Converter{
-    int ConvertToCents(double value);
+int ConvertValueToCents(double value);
 };
 
 namespace Time{

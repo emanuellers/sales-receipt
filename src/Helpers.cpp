@@ -1,10 +1,11 @@
-#include "helpers.hpp"
+#include "Helpers.hpp"
 #include <ctime>
 #include <ctime>
 
 
-int Converter::ConvertToCents(double value){
-    return int(value * 100);
+
+int Converter::ConvertValueToCents(double value){
+    return int(value * 100.0);
 };
 
 std::string Time::GetCurrentTime(){
