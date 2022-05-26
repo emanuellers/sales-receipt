@@ -1,8 +1,7 @@
-#include <string>
+#include "TableTemplate.hpp"
 #include "Helpers.hpp"
 
-class Product{
- static int ids;
+class Product : public TableTemplate{
 
 public:
      enum ProductType{

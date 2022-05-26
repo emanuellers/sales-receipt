@@ -7,12 +7,10 @@ name(name),
 price(Converter::ConvertValueToCents(price)),
 description(description),
 amount(amount),
-type(type),
-id(ids++)
+type(type)
 {
 };
 
-int Product::ids = 0;
 
 std::string Product::getName(){
     return name;
