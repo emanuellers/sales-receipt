@@ -5,6 +5,6 @@ class Database{
 public:
     sqlite3* ConnectToDataBase(char* dbName);
     int CloseDatabaseConnection(sqlite3* db);
-    int CreateTable(std::string tableName);
+    int CreateTable(sqlite3* openDb,  std::string ddl);
     int InsertElement();
 };

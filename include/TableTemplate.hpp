@@ -3,6 +3,11 @@
 
 class TableTemplate{
 public:
-    static std::string template_table;
-    std::string classToTemplateTable();
+    enum Classes{
+        PRODUCT = 1,
+        CLIENT = 2,
+        SALE = 3
+    };
+    static Classes tableName;
+    std::string classToTemplateTable(Classes identifier);
 };

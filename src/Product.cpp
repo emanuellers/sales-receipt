@@ -10,7 +10,7 @@ amount(amount),
 type(type)
 {
 };
-
+TableTemplate::Classes tableName = TableTemplate::Classes::PRODUCT;
 
 std::string Product::getName(){
     return name;
@@ -23,9 +23,6 @@ std::string Product::getDescription(){
 };
 int Product::getAmount(){
     return amount;
-};
-int Product::getId(){
-    return id;
 };
 
 Product::ProductType Product::getType(){

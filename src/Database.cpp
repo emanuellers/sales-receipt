@@ -24,3 +24,14 @@ int Database::CloseDatabaseConnection(sqlite3* db){
 
     return close;
 };
+
+int Database::CreateTable(sqlite3* openDb, std::string ddl){
+    char* error;
+    int result = sqlite3_exec(openDb, ddl.c_str(), NULL, 0, &error);
+
+    if(result != SQLITE_OK){
+        throw std::runtime_error(error);
+    }
+        
+    return SQLITE_OK;
+}

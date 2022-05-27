@@ -14,7 +14,6 @@ private:
     int price;
     std::string description;
     int amount;
-    int id;
     ProductType type;
 
 public:
