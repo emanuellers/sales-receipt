@@ -27,10 +27,18 @@ std::vector<Sale::boughtProduct> Sale::removeProductsFromSale(std::string produc
     {
         if(products[i].productId == productId){
             positionProduct =  i;
+            break;
+        }
+        else{
+            positionProduct = -1;
         }
     };
 
-    //products.erase(positionProduct);
+    if(positionProduct == -1){
+        return ;
+    };
+
+    products.erase(products.begin() + positionProduct);
     
     return products;
 };

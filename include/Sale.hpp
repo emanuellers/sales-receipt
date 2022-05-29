@@ -1,5 +1,6 @@
 #include "TableTemplate.hpp"
 #include <vector>
+#include <string>
 
 class Sale{
 public:
