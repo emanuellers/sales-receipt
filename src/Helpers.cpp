@@ -1,8 +1,5 @@
 #include "Helpers.hpp"
 #include <ctime>
-#include <ctime>
-
-
 
 int Converter::ConvertValueToCents(double value){
     return int(value * 100.0);

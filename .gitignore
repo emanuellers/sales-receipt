@@ -1,3 +1,9 @@
 *.o
 *.exe
 *.log
+sqlite3.h
+sqlite3.c
+sqlite3ext.h
+shell.c
+*.h
+*.txt

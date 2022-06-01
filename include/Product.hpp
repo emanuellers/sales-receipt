@@ -22,7 +22,7 @@ public:
     int getPrice();
     std::string getDescription();
     int getAmount();
-    int getId();
+    std::string getId();
     ProductType getType();
     void displayProduct();
 };

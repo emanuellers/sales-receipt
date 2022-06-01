@@ -1,5 +1,5 @@
 #include <string>
-#include "include/TableTemplate.hpp"
+#include "TableTemplate.hpp"
 
 
 std::string TableTemplate::classToTemplateTable(TableTemplate::Classes identifier){

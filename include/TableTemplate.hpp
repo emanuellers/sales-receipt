@@ -8,6 +8,5 @@ public:
         CLIENT = 2,
         SALE = 3
     };
-    static Classes tableName;
     std::string classToTemplateTable(Classes identifier);
 };

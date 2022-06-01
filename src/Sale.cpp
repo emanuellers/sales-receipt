@@ -1,11 +1,11 @@
-#include "include/Sale.hpp"
+#include "Sale.hpp"
+#include <stdexcept>
 
-Sale::Sale(std::string clientEmail,   std::vector<boughtProduct> products):
-clientEmail(clientEmail),
-products(products)
+Sale::Sale(std::string clientEmail):
+clientEmail(clientEmail)
 {};
 
-TableTemplate::Classes tableName = TableTemplate::Classes::SALE;
+TableTemplate::Classes saleTable = TableTemplate::Classes::SALE;
 
 std::string Sale::getClientEmail(){
     return clientEmail;
@@ -35,7 +35,7 @@ std::vector<Sale::boughtProduct> Sale::removeProductsFromSale(std::string produc
     };
 
     if(positionProduct == -1){
-        return ;
+        throw std::invalid_argument("Product with given id not in boughtProducts array.");
     };
 
     products.erase(products.begin() + positionProduct);

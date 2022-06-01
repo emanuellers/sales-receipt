@@ -9,6 +9,7 @@ public:
         int amount ;
     };
 private: 
+    int id;
     std::string clientEmail;
     std::vector<boughtProduct> products;
     int totalPrice;
@@ -16,7 +17,7 @@ private:
 private:
     int calculateTotalPrice(std::vector<boughtProduct> products);
 public:
-    Sale(std::string clientEmail,   std::vector<boughtProduct> products);
+    Sale(std::string clientEmail);
     int getTotalPrice(std::vector<boughtProduct> products); 
     std::string getClientEmail();
     std::vector<boughtProduct> getBoughtProducts();
