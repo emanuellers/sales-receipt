@@ -1,7 +1,6 @@
-#include "TableTemplate.hpp"
 #include "Helpers.hpp"
 
-class Product : public TableTemplate{
+class Product {
 
 public:
      enum ProductType{

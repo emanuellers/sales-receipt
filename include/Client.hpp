@@ -1,6 +1,6 @@
-#include "TableTemplate.hpp"
+#include <string>
 
-class Client : public TableTemplate{
+class Client {
 private:
     std::string email;
     std::string cpf;

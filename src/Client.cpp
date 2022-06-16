@@ -7,8 +7,6 @@ name(name),
 telephone(telephone)
 {};
 
-TableTemplate::Classes clientTable = TableTemplate::Classes::CLIENT;
-
 std::string Client::getEmail(){
     return email;
 };
